@@ -1,0 +1,9 @@
+MENGGUNAKAN TAG
+* class atau function unit test kita bisa menambahkan tag(tanda) dengan menggunakan annotation @Tag
+* dengan menambah tag ke dalam unit test, kita bisa fleksibel ketika menjalankan unit test, kita bisa memilih tag mana yang mau di include atau di exclude
+* jika kita menambahkan tag di class unit test, secara otomatis semua function unit test di dalam class tersebut akan memiliki tag tersebut
+* jika kita ingin menambahkan beberapa tag di suatu class atau function unit test kita bisa menggunakan annotation @Tags
+* untuk penamaan tag tidak boleh menggunakan spasi jika ada harus memakai underscore
+
+
+nb : jika kita ingin merunning hanya tag tertentu dengan perintah mvn test-Dgroups=isiTag1,isiTag2 ...

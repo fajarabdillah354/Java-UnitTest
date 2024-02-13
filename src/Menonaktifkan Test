@@ -1,0 +1,5 @@
+* kadang ada kalannya kita ingin menonaktifkan unit test, misal karena terjadi error di unit test dan kita belum bisa perbaiki
+* sebenernya cara paling mudah untuk menonaktifkan unit test adalah dengan menghapus annotation @Test pada program , namun jika kita lakukan itu, kita tidak bisa mendeteksi kalo ada unit test yang di disable
+* untuk menonaktifkan unit test secara bener, kita bisa menggunakan annotation @Disable
+
+nb : saat menggunakan ada tanda bahwa tesnya di disable, jika menggunakan maven test akan ada skipped pada unit tesnya

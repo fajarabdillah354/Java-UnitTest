@@ -1,0 +1,9 @@
+* tidak ada yang magic dalam Junit, sebenarnya fitur TestInfo adalah bagian dari dependency injection di Junit
+* dependecy Injection sederhananya adalah bagaimana kita bisa memasukkan dependency (object/instance) ke dalam unit test secara otomatis tanpa proses manual
+*  saat kita parameter di function unit test, sebenarnya kita bisa secara otomatis memasukan parameter tersebut dengan bantuan ParameterResolver
+* contoh TestInfo yng kita bahas sebelumnya sebenarnya object dibuat oleh TestInfoParameterResolver
+
+
+MENGGUNAKAN PARAMETER RESOLVER
+* untuk menggunakan parameter resolver yang sudah kita buat kita bisa menggunakan annotation @ExtendWith di test class
+* jika lebih dari 1 parameter resolver kita bisa menggunakan @Extentions

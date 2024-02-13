@@ -1,0 +1,13 @@
+Siklu Hidup Test
+* secara default lifecycle object test adalah independent per method, artinya object unit test akan selalu dibuat baru per method unit test oleh karena itu kita tidak bisa bergantung dengan method test lain
+* cara pembuatan object test di Junit ditentukan oleh anntotation @TestInstance dimana defaultnya adalah Lifecycle.PER_METHOD. artinya tiap method akan dibuat sebuah instance/object baru
+* kita bisa merubahnya menjadi Lifecycle.PER_CLASS jika mau , dengan ini instance/object test hanya dibuat sekali per class dan methoh test akan menggunakan object test yang sama
+* hal ini bisa kita manfaatkan ketika membuat test yang tergantung dengan test lain
+
+
+
+nb : kita bisa melakukan sharing variable antara method unit test
+
+keuntungannya ketika kita menggunakan PER
+_CLASS kita bisa menggunakan beforeAll() dan afterAll() tanpa menggunakan static
+

@@ -1,0 +1,5 @@
+* Kadang kita ingin membatalkan unit test ketika kondisi tertentu terjadi
+* Untuk membatalkannya kita bisa menggunakan exception TestAbortedException
+* jika jUnit mendapatkan exception TestAbortedException, secara otomatis test tersebut akan di batalkan
+
+nb : walaupun akan keluar exception tapi itu bukan error tapi bentuk pembatalannya

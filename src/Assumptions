@@ -1,0 +1,6 @@
+Assumptions adalah sebuah class yang ada di junit yang memiliki sifat static(jadi kalo kita ingin meng importnya harus menggunakan static), Assumptions kita akan ber asumsi bahwa suatu program pada kondisi tertentu contoh assumeFalse (ini berarti kondisinya harus false jika tidak akan dibatalkan)
+
+* sebelumnya kita sudah tahu jika ingin membatalkan test kita bisa menggunakan exception TestAbortException
+* namun sebenarnya ada cara yang lebih mudah, yaitu dengan menggunakan Assumpstions
+* Pengguna Assumpstions mirip seperti Assertions, jika nilainya tidak sama, maka function Assumptions akan thrown TestAbortException, sehingga secara otomatis akan membatalkan unit test
+

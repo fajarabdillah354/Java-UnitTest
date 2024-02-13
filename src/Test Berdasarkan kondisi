@@ -1,0 +1,26 @@
+1. Kondisi Sistem Operasi
+* untuk kondisi sistem operasi, kita bisa menggunakan beberapa annotation
+* @EnableOnOs digunakan untuk penanda bahwa unit tes boleh berjalan di sistem operasi yang ditentukan
+* @DisableOnOs digunakan untuk penanda bahwa unit test tidak boleh berjalan di sistem operasi yang ditentukan
+
+
+2. Kondisi versi java yang digunakan
+* untuk kondisi java yang kita gunakan, kita bisa menggunakan beberapa annotation
+* @EnableOnJre digunakan untuk penanda bahwa unit test boleh berjalan di java dengan versi tertentu
+* @DisableOnJre digunakan untuk penanda bahwa unit test tidak boleh berjalan di java versi tertentu
+* @EnableForJreRange digunakan untuk penanda bahwa unit test boleh berjalan di range java versi tertentu
+* @DisableForJreRange digunakan untuk penanda bahwa unit test tidak boleh berjalan di range java versi terttentu
+
+
+3. Kondisi system properti
+* untuk kondisi nilai dari system properti, kita bisa menggunakan beberapa annotation
+* @EnableSystemProperty untuk penanda bahwa unit test boleh berjalan di system properti yang ditentukan
+* @DisablefIfSystemProperty untuk penanda bahwa unit test tidak boleh berjalan di sistem properti yang ditentukan
+* jika kondisi lebih dari satu, kita bisa menggunakan @EnabledIfSystemProperties dan @DisabledIfSystemProperties
+
+
+4. Kondisi Enviroment Variabel
+* Untuk kondisi nilai dari enviroment variabel kita bisa menggunakan beberapa annotation
+* @EnableIfEnviromentVariabel untuk penanda bahwa unit test boleh berjalan jika enviroment variabel sesuai dengan yang di tentukan
+* @DisableIfEnviromentVariable untuk penanda bahwa unit test tidak boleh berjalan jika enviroment sesuai dengan yang ditentukan
+* jika kondisinya lebih dari satu kita bisa menggunakan @EnableIfEnviromentVariables dan @DisabledIfEnviromentVariables

@@ -1,0 +1,6 @@
+Test dalam test
+* saat membuat unit test ada baiknya ukuran test classnya tidk terlalu besar, karena akan sulit di baca dan dimengerti
+* jika test class sudah semakin besar ada baiknya kita pecah menjadi beberapa test class lalu kita grouping sesuai dengan jenis method testnya
+* Junit mendukung pembuatan class di file berbeda , kita bisa cukup menggunakan inner class
+* untuk memberi tabu bahwa inner class tersebut adalah test clas, kita bisa menggunakan keyword annotation
+@Nested

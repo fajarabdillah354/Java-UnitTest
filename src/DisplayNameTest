@@ -1,0 +1,10 @@
+* kadang agak sulit membuat nama function yang merepresentasikan kasus test yang kita buat
+* jika ingin menambahkan deskripsi untuk setiap test, kita bisa menggunakan annotation @DisplayName
+* dengan menggunakan nnotation @DisplayName kita bisa menambahkan deskripsi unit test kita
+
+ex:
+
+@DisplayName("test production")
+public class getProduct{
+    // isi test
+}

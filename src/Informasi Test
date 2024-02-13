@@ -1,0 +1,8 @@
+INFORMASI TEST
+* walaupun jarang digunakan tapi kita bisa mendapatkan informasi test yang sedang berjalan menggunakan interface TestInfo
+* kita bisa menambahkan TestInfo sebagai parameter di function unit test
+* ada beberapa method yang bisa digunakan yaitu
+    getDisplayName() :String
+    getTags() :Set<String>
+    getTestClass() :Optional<Class<?>>
+    getTestMethod():Optional<Method>

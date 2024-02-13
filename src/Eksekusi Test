@@ -1,0 +1,18 @@
+1. Urutan Eksekusi Test
+
+* secara default urutan eksekusi unit test tidak ditentukan, jadi jangan berharap jika sebuah method berada diatas method lainnya, maka akan dijalankan lebih dulu
+* Hal ini karena memang sebaiknya methoh unit test itu harus dibuat independen , tidak saling ketergantungan
+* secara default pun object class unit test akan selalu dibuat ulang tiap method, jadi jangan berharap kita bisa menyimpan data di variable untk digunakan di unit test method selanjutnya
+
+
+
+2. MENGUBAH URUTAN EKSEKUSI TEST
+
+* Junit mendukung perubahan urutan eksekusi test jika kita mau menggunakan annotation @TestMethodOrder. ada beberapa cara yang bisa kita lakukan
+* MethodName artinya urutan eksekusi unit test akan diurutkan berdasarkan Alfabetnya
+* Random artinya urutan eksekusi unit test akan dieksekusi secara random
+* OrderAnnotation artinya eksekusi unit test akan mengikuti annotation  @Order yang ada di tiap method unit test
+
+
+3. MENGUBAH URUTAN SENDIRI
+* jika kita ingin membuat cara mengurutkan urutan unit test function sendiri kita bisa dengan mudah tinggal membuat class baru turunan dari MethodOrderer interface
