@@ -10,7 +10,7 @@ public class InformationTest {
             @Tag("two")
     })
     @DisplayName("this is test 1")
-    void test1(TestInfo testInfo) {
+    void test1(TestInfo testInfo) {// ini digunakan untuk mendapatkan display namenya dengan menggunakan class TestInfo
         System.out.println(testInfo.getDisplayName());
         System.out.println(testInfo.getTags());
         System.out.println(testInfo.getTestClass().orElse(null));
