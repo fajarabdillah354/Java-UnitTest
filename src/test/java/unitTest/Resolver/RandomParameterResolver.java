@@ -1,4 +1,4 @@
-package unitTes.Resolver;
+package unitTest.Resolver;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.ParameterContext;

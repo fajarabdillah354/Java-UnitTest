@@ -1,4 +1,4 @@
-package unitTes;
+package unitTest;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Tag;

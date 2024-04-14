@@ -1,4 +1,4 @@
-package unitTes;
+package unitTest;
 
 public class User {
 

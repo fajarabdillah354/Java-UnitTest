@@ -1,4 +1,4 @@
-package unitTes;
+package unitTest;
 
 import javax.swing.*;
 

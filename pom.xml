@@ -92,7 +92,7 @@
             </descriptorRefs>
             <archive>
               <manifest>
-                <mainClass>unitTes.App</mainClass>
+                <mainClass>unitTest.App</mainClass>
               </manifest>
             </archive>
           </configuration>

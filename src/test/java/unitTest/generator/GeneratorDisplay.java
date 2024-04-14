@@ -1,7 +1,5 @@
-package unitTes.generator;
+package unitTest.generator;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.DisplayNameGeneration;
 import org.junit.jupiter.api.DisplayNameGenerator;
 
 import java.lang.reflect.Method;

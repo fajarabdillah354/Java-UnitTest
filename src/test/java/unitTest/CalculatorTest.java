@@ -1,9 +1,8 @@
-package unitTes;
+package unitTest;
 
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.function.Executable;
 import org.opentest4j.TestAbortedException;
-import unitTes.generator.GeneratorDisplay;
+import unitTest.generator.GeneratorDisplay;
 import static org.junit.jupiter.api.Assumptions.*;
 
 import static org.junit.jupiter.api.Assertions.*;
