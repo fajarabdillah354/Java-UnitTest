@@ -1,0 +1,15 @@
+TEST DENGAN PARAMETER
+- Sebelumnya kita sudah tau jika ingin menanmbah parameter di function unit test, maka kita perlu membuat paramater resolver
+- namun jika terlalu banyak membuatnya akan menyulitkan kita juga
+- Junit memiliki fitur yang bernama @ParameterizedTest, dimana jenis unit test ini memang khusus dibuat agar dapat menerima parameter
+- Yang perlu kita lakukan adalah dengan mengganti @Test menjadi @ParameterizedTest
+
+
+SUMBER PARAMETER
+@ParameterizedTest mendukung beberapa parameter
+-@ValueSourcee untuk Number, Char, Boolean, dan String
+- @EnumSource untuk Sumber berupa Enum
+- @MethodSource untuk sumber dari static method
+- @CsvSource untuk sumber baris yang ada di csv file
+- @CsvFileSource untuk sumber dari file CSV
+- @ArgumentSource untuk data dari class ArgumentProvider
