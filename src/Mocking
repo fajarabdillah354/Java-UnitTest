@@ -1,0 +1,35 @@
+KETERGANTUNGAN ANTAR CLASS
+- Saat membuat aplikasi  yang besar, source code pun akan semakin besar,strukur class pun akan semakin kompleks
+- Kita tidak bisa memungkiri lagi ada nya ketergaantungan class
+- Unit test yang bagus itu bisa terprediksi dan cukup nge test ke satu function, jika harus mengetes interaksi antar class, lebih disarankan integration test namun mahal panjang prosesnya
+- Solusiny adalah penggunaan dari Mocking terhadap dependency yang dibutuhkan class y ang akan kita test
+
+PENGENALAN MOCKING
+- Mocking sederhanannya adalah membuat object tiruan
+- hal ini dilakukan agar behavior object tersebut bisa kita tentukan sesuai dengan keinginnan kita
+- Dengan Mocking, kita bisa membuat request response seolah2 object tersebut benar2 dibuat
+- Mockito adalah salah satu mocking framwork paling popular di Java, dan bisa digunakan juga untuk Kotlin
+- Selain itu Mockito juga bisa berinteraksi dengan baik dengan JUnit
+- untuk penggunaanya kita harus menambahkan dependency mockito-junit-jupiter ke dalam maven kita
+
+Contoh Mocking dengan Mockito
+//Membuat Mock Object
+List<String> list = Mockito.mock(List.class)
+
+//Menambah Behavior ke Mock Object
+Mockito.when(list.get(0)).thenReturn("fajar")
+
+//Test Mock
+assertEquals("fajar",list.get(0))
+
+//verify Mock
+Mockito.verify(list, Mockito.times(1)).get(0)
+
+MOCKING TEST
+- Mocking memiliki MockitoExtention yang bisa kita gunakan untuk integrasi dengan JUnit
+- Hal ini memudahkan kita ketika ingin membuat mock object, kita cukup gunakan @Mock
+
+Contoh Kasus
+- kita punya sebuah class model dengan nama class Person(id:String, name:String)
+- selanjutnya kita punya interface PersonRepository sebagai interaksi ke database, dan memiliki function selectById(id:String) untuk melakukan mendapakan data Person di database
+- dan terakhir kita memiliki class PersonService yang digunakan sebagai class bisnis logic, dimana diclass tersebut kita akan coba gunakan PersonRepository untuk mendapatkan data dari database, jika gagal, kita akan throw Exception

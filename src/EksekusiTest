@@ -1,0 +1,12 @@
+EKSEKUSI TEST secara Paralel
+- Secara default, JUnit tidak mendukung eksekusi unit test secara paralel, artinya unit test akan dijalankan secara sequential(berurutan) satu per satu(Pastikan tiap method independen)
+- Kadang ada kasus kita ingin mempercepat proses unit test sehingga dijalankan secara paralel, hal ini bisa dilakukan di JUnit, namun perlu beberapa langkah
+
+Menambah Config pararel
+- Hal pertama yang perlu kita lakukan adalah membuat file junit-platform.properties di folder resource(ini harus berada di file unitTestnya
+- Lalu menambah value didalam filenya:
+    * junit.jupiter.execution.parallel.enabled=true(default ini adalah false)
+- Ini adalah penanda bahwa kita telah mengaktifkan fitur parallelnya Junit
+
+Menggunakan @Execution
+- Walaupun sudah mengaktifkan fiter pararel, tapi bukan berarti kita dapat menggunakannya dengan otomatis kita perlu menambahkan @Execution lalu untuk valuenya kita set menjadi ExecutionMode.CONCURRENT agar fitur ini dapat digunakan

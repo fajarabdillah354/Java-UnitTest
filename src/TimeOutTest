@@ -1,0 +1,4 @@
+TIMEOUT di Test
+- Kadang kita ingin memastikan bahwa sebuah unit test berjalan tidak lebih dari waktu yang kita tentukan(misal kita ingin mempunyai performa yang bagus)
+- Junit ada fitur TIMEOUT, yaitu untuk memastikan bahwa unit test berjalan tidak lebih dari waktu yang ditentukan, jika melebihi waktu yang ditentukan, secara otomatis unit test tersebut akan gagal
+- Kita bisa menggunakan annotation @Timeout untuk melakukan hal tersebut

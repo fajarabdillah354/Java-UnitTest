@@ -6,7 +6,7 @@ TEST DENGAN PARAMETER
 
 
 SUMBER PARAMETER
-@ParameterizedTest mendukung beberapa parameter
+@ParameterizedTest mendukung beberapa parameter(ini adalah pengganti dari parameter resolver yaitu untuk mempermudah)
 -@ValueSourcee untuk Number, Char, Boolean, dan String
 - @EnumSource untuk Sumber berupa Enum
 - @MethodSource untuk sumber dari static method

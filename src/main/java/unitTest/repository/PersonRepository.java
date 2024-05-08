@@ -1,2 +1,11 @@
-package unitTest.repository;public interface PersonRepository {
+package unitTest.repository;
+
+import unitTest.data.Person;
+
+public interface PersonRepository {
+
+    Person selectById(String id);
+
+    Person insert(Person person);
+
 }
